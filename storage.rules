@@ -1,0 +1,18 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+    
+    match /interactiveMessages/{sessionId}/{fileName} {
+    	allow read;
+      allow write;
+    }
+    
+    match /imageResponses/{uid}/{imageId} {
+      allow read;
+      allow write;
+    }
+  }
+}

@@ -6,7 +6,7 @@ In March of 2023, I partnered with my good friend [Jake Taylor](https://github.c
 
 As far as I know, we were the first app to integrate LLMs (specifically, ChatGPT) directly into iMessage so that engaging with a large language model was as easy as sending a text. 
 
-In our infinite cleverness, we named this app ["aiMessages"](https://sites.google.com/view/aimessagesapp/home). We launched on the Apple App Store June 2023 and at the time of writing this post (May 2024) it is still available for [download](https://apps.apple.com/us/app/aimessages/id6446336518).
+In our infinite cleverness, we named this app ["aiMessages"](https://sites.google.com/view/aimessagesapp/home). We launched on the Apple App Store June 2023 and it was available for download until July 2024.
 
 # Tech Stack
 

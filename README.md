@@ -8,6 +8,8 @@ In our infinite cleverness, we named this app ["aiMessages"](https://sites.googl
 
 # Tech Stack
 
+There are a lot of boilerplate Firebase files included in the repo; most of the relevant server-side code can be found in [functions/src/index.ts](https://github.com/lwcarani/aiMessages-backend-public/blob/main/functions/src/index.ts) along with the referenced imports. 
+
 For scalability, we chose to use [Firebase](https://firebase.google.com/), an app development platform backed by Google. We integrated [RevenueCat](https://www.revenuecat.com/) to simplify user payments, which was much simpler than using the `StoreKit` API. For sending LLM / ChatGPT responses back to users via iMessage, we used [LoopMessage](https://loopmessage.com/server), an iMessage API for sending blue text messages to iMessage users. For generating photo-realistic images with generative AI, we used [StabilityAI's](https://stability.ai/) stable diffusion text-to-image and inpainting models, and [Clipdrop's](https://clipdrop.co/) sketch-to-image model. For the AI chatbot / LLM experience, we used [OpenAI's](https://chatgpt.com/) ChatGPT model. Finally, we decided to use Google Cloud Functions (which are integrated into Firebase) to develop and deploy our serverless execution environment, and subsequently all of our backend code is written in [Typescript](https://www.typescriptlang.org/). I will discuss each of these technologies / APIs in more detail in later blog posts.
 
 I learned so many valuable lessons and techniques relevant to software engineering by working on this app over the last year. 
